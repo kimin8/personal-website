@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,11 +10,13 @@
 
 :root {
     --primary-background: #222831;
-    --secondary-background: #393E46;
-    /* --primary-text: #00ADB5; */
-    /* --primary-text: #df6183; */
+    --secondary-background: #f9f9f9;
     --primary-text: #9be289;
     --secondary-text: #EEEEEE;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .slide {
@@ -39,19 +44,32 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: all 0.4s ease-in-out;
+}
+
+.scrolled {
+    background: #f9f9f9;
+    padding: 13px 100px;
+    transition: all 0.4s ease-in-out;
 }
 
 .logo {
-    font-size: 40px;
-    color: #fff;
+    font-size: 34px;
+    color: #f9f9f9;
     text-decoration: none;
-    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.scrolled-colors {
+    color: black;
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar a {
     position: relative;
     font-size: 20px;
-    color: #fff;
+    color: #f9f9f9;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
@@ -90,7 +108,7 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    width: 60rem;
+    width: 61rem;
 }
 
 .hero-text {
@@ -98,11 +116,11 @@
     flex-direction: column;
     gap: 1.5rem;
     font-weight: 500;
-    width: 40rem;
+    width: 45rem;
 }
 
 .hero-title {
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 0.5px;
     color: #fff;
     line-height: 4.5rem;
@@ -110,7 +128,7 @@
 
 .info {
     color: #d2d0d0;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #main-photo {
@@ -125,7 +143,7 @@
 
 #linkedin, #github {
     color: #fff;
-    font-size: 48px;
+    font-size: 50px;
 }
 
 #linkedin:hover, #github:hover {
@@ -162,4 +180,89 @@
 
 .colored {
     color: #9be289;
+}
+
+.about-container {
+    height: 30rem;
+}
+
+.about-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 6rem;
+    width: 61rem;
+    height: 100%;
+}
+
+.left {
+    height: 100%;
+}
+
+.about-picture {
+    width: 29rem;
+    border-radius: 1rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45rem;
+    background-color: #f9f9f9;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.3rem;
+}
+
+.about-me {
+    color: #9be289;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about-title {
+    font-size: 32px;
+    line-height: 2.7rem;
+}
+
+.information-about-me {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.tech-stack {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.right > hr {
+    width: 100%;
+}
+
+.stack {
+    margin-top: 1rem;
+}
+
+.stack > div > img {
+    width: 45px;
+    height: 45px;
+}
+
+.stack {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stack > div:hover {
+    margin-top: -1.3rem;
+    transition: all 0.3s ease-in-out;
 }
