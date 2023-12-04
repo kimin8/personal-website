@@ -172,6 +172,7 @@ html {
     position: relative;
     transition: all 1s ease-in-out;
     width: 30rem;
+    border: 3px solid #9be289;
 }
 
 .colored {
@@ -217,7 +218,7 @@ html {
 .about-me {
     color: #9be289;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .about-title {
@@ -281,7 +282,7 @@ html {
 .portfolio {
     color: #9be289;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .title {
