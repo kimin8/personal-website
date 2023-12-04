@@ -86,10 +86,6 @@ html {
     transition: 0.3s;
 }
 
-.navbar a:hover {
-    color: var(--primary-text);
-}
-
 .navbar a:hover::before {
     width: 100%;
     background-color: var(--primary-text);
@@ -188,7 +184,6 @@ html {
 
 .about-content {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     gap: 6rem;
     width: 61rem;
@@ -265,4 +260,105 @@ html {
 .stack > div:hover {
     margin-top: -1.3rem;
     transition: all 0.3s ease-in-out;
+}
+
+.projects {
+    background-color: #fff;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 61rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portfolio {
+    color: #9be289;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.title {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+}
+
+.little-info {
+    font-size: 32px;
+    line-height: 2.7rem;
+    font-weight: bold;
+}
+
+.project-card {
+    width: 61rem;
+    height: 30rem;
+    background-color: #f9f9f9;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.car-project-image {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-image: url('images/car-rental.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    gap: 1rem;
+}
+
+.project-name {
+    text-align: center;
+}
+
+.project-info {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.project-links > a {
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 0.5rem; 
+    border-radius: 1rem;
+}
+
+.project-links > a:hover {
+    background-color: #e1dede;
+    transition: 0.2s all ease-in-out;
+}
+
+.guess-project-image {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-image: url('images/guess-a-number.png');
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
