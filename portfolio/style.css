@@ -51,6 +51,9 @@ html {
     background: #f9f9f9;
     padding: 13px 100px;
     transition: all 0.4s ease-in-out;
+    -webkit-box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
+    -moz-box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
+    box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
 }
 
 .logo {
@@ -307,6 +310,9 @@ html {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    -webkit-box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
+    -moz-box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
+    box-shadow: 0px 3px 16px -6px rgba(45,46,50,1);
 }
 
 .car-project-image {
@@ -443,7 +449,7 @@ html {
 }
 
 .footer-text {
-    color: white;
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
 }
