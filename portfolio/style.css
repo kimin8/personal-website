@@ -511,3 +511,157 @@ html {
         transition: 0.3s all ease-in-out;   
     }
 }
+
+@media (max-width: 1135px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .hero-title, .info {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about {
+        height: 75rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        gap: 2rem;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .right {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .about-title {
+        text-align: center;
+        width: 80%;
+    }
+
+    .information-about-me {
+        text-align: center;
+        width: 80%;
+        font-size: 26px;
+    }
+
+    .tech-stack {
+        font-size: 30px;
+    }
+
+    .stack {
+        width: 50%;
+    }
+
+    .right > hr:nth-child(5) {
+        width: 50%;
+    }
+
+    .portfolio {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .little-info {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        height: 70rem;
+        width: 50rem;
+    }
+
+    .car-project-image {
+        width: 40rem;
+        height: 50%;
+        border-radius: 4rem;
+    }
+
+    .guess-project-image {
+        width: 30rem;
+        height: 50%;
+        border-radius: 4rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .project-name {
+        font-size: 32px;
+        width: 40rem;
+        margin-bottom: 10px;
+    }
+
+    .project-info {
+        width: 35rem;
+        font-size: 26px;
+        line-height: 2.5rem;
+    }
+
+    .project-links {
+        width: 30rem;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .project-links > a {
+        font-size: 30px;
+    }
+
+    .contact {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .contacts-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .contact-location-mail {
+        justify-content: center;
+    }
+    
+    .mail-title, .location-title {
+        font-size: 1.6rem;
+    }
+
+    .location-place, .mail {
+        font-size: 1.4rem;
+    }
+}
