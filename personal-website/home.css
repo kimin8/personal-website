@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(variables.css);
+
+:root {
+    --primary: #147efb;
+    --secondary: #2d2e32;
+    --info: #555;
+    --bg-color-1: #f9f9f9;
+}
+
+#home {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-1);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-title {
+    letter-spacing: 0.5px;
+    color: var(--secondary);
+    line-height: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.information {
+    color: var(--info);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+#main-photo {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+#linkedin, #github {
+    color: var(--secondary);
+    font-size: 50px;
+}
+
+#linkedin:hover, #github:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+@keyframes changeShape {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.blob {
+    animation: changeShape 5s ease-in-out infinite;
+    background-image: url(assets/home-picture.jpg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid transparent;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 23rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 23rem;
+    border: 3px solid var(--secondary);
+}
+
+.colored {
+    color: #9be289;
+}
+
+@media (max-width: 1209px) {
+    .hero-text {
+        align-items: center;
+    }
+
+    #home > div:nth-child(1) > div:nth-child(1) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-title, .information {
+        text-align: center;
+    }
+
+    .hero-title {
+        line-height: 4rem;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .blob {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .blob {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-text {
+        width: 32rem;
+    }
+
+    #home > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+    }
+}
